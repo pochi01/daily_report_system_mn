@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<c:import url="WEB-INF/views/layout/app.jsp">
+<c:import url="/WEB-INF/views/layout/app.jsp">
     <c:param name="content">
         <c:choose>
             <c:when test="${report != null}">
                 <h2>日報　編集ページ</h2>
-                <form method="POST" action="<c:url value='/repots/update' />">
-                    <c:import url="_form,jsp" />
+                <form method="POST" action="<c:url value='/reports/update' />">
+                    <c:import url="_form.jsp" />
                 </form>
             </c:when>
             <c:otherwise>

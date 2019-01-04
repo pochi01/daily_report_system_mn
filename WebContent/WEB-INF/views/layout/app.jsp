@@ -5,8 +5,8 @@
     <head>
         <meta charset="UTF-8">
         <title>日報管理システム</title>
-        <link rel="stylesheet" href="<c:url value='./css/reset.css' />">
-        <link rel="stylesheet" href="<c:url value='./css/style.css' />">
+        <link rel="stylesheet" href="<c:url value='/css/reset.css' />">
+        <link rel="stylesheet" href="<c:url value='/css/style.css' />">
     </head>
     <body>
         <div id="wrapper">
@@ -23,7 +23,7 @@
                 <c:if test="${sessionScope.login_employee != null}">
                     <div id="employee_name">
                         <c:out value="${sessionScope.login_employee.name}"/>&nbsp;さん&nbsp;&nbsp;&nbsp;
-                        <a href="'<c:url value='/logout' />">ログアウト</a>
+                        <a href="<c:url value='/logout' />">ログアウト</a>
                    </div>
                 </c:if>
             </div>
